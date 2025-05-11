@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -7,7 +7,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <img
+      src="ressources/wiki-logo.png"
+      alt="wikipedia logo"
+      class="wiki-logo"
+    />
+    <h1>Recherche <span>Wikipedia</span></h1>
+    <form>
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Rechercher un terme"
+      />
+    </form>
 
+    <p class="error-msg"></p>
+    <div class="results-display"></div>
+
+    <div class="loader"> <!-- Créer trois petits points qui vont sauter les uns à la suite des autres (loading)-->
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
